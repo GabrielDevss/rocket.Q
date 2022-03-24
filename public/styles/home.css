@@ -3,16 +3,24 @@
   grid-template-columns: 60% 40%;
   grid-template-rows: 11.4rem 1fr;
 
-  grid-template-areas: 'header header' 'left right';
+  grid-template-areas: 
+  'header header'
+  'left right';
 }
 
 header {
   grid-area: header;
 }
 
+header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
 #bg {
   grid-area: left;
-  background: url(/images/home-bg-img.svg) no-repeat top/contain;
+  background: url('/images/home-bg-img.svg') no-repeat top/contain;
   background-position-x: -7rem;
 }
 
@@ -109,4 +117,29 @@ input, button, .button {
 .ball.bottom {
   bottom: -17rem;
   right: 5.6rem
+}
+
+@media (max-width: 960px) {
+  #bg {
+    visibility: hidden;
+  }
+
+  .content { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header { 
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 400px) {
+    .content {
+      margin: 3rem;
+    }
 }
