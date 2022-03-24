@@ -161,32 +161,3 @@
 .questions-wrapper.read  .user {
   background: var(--grey-blue);
 }
-
-
-
-/* .footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  margin-top: 5.2rem;
-}
-
-.footer h4 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.8rem;
-  font-weight: 600;
-  color: var(--black);
-
-  margin: 1.3rem;
-}
-
-.footer p {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.4rem;
-  font-weight: 400;
-  color: var(--grey-dark);
-  line-height: 1.9rem;
-  text-align: center;
-} */
